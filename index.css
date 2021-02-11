@@ -1,0 +1,109 @@
+/*CSS Reset*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width:100%;
+  /*put a border around everything to see where it stops and starts*/
+    border:1px solid orangered;
+}
+/*General Styles*/
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:1.8rem;
+    line-height: 1.5;
+    font-family: 'PT Sans', sans-serif;
+    background-color:#FFFAFA;
+}
+h1, h2, h3, h4{
+    letter-spacing: 3px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size:2.5rem;
+}
+section{
+    padding: 4% 0;
+}
+a{
+    text-decoration:none;
+    letter-spacing:3px;
+    color:#4F4F4F;
+    font-family: 'PT Sans', sans-serif;
+}
+a:hover{
+    color:#fcb131;
+}
+i{
+    font-size: 5rem;
+}
+
+/* Header styling */
+
+header{
+    height: 26.5rem;
+    background-color: rgb(169, 212, 169);
+}
+
+.title{
+    width: fit-content;
+    margin: 5rem auto 3rem 8rem;
+
+}
+
+nav{
+    width: fit-content;
+    height: fit-content;
+    margin-left: 12rem;
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.link_blocks{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    width: 15rem;
+    height: 6.5rem;
+    border: rgb(49, 43, 43) solid .5rem;
+    border-left: 0px;
+}
+
+.link_blocks:first-child{
+    border-left: rgb(49, 43, 43) solid .5rem;
+    background-color: rgb(49, 43, 43);
+    color: whitesmoke;
+} 
+
+/* body styling */
+
+body{
+    width: 100%;
+}
+
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin: 3rem 6.5rem;
+    padding: 0;
+
+}
+
+.hero_img{
+    width: 48%;
+}
+
+hero_text{
+    
+}
