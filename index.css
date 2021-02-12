@@ -127,8 +127,8 @@ body{
     max-height: 100vh;
     display: flex;
     flex-direction: column;
-   align-items: flex-start;
-   padding-left: 8rem;
+    align-items: flex-start;
+    padding-left: 8rem;
 
 }
 
@@ -147,13 +147,26 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0;
+    height: 100%;
 }
 
 .gallery_box{
-    display: fle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1% 6rem 1%;
+    max-width: 20%;
+    
+    /* height: 35rem; */
+    /* width: 35rem; */
+
 
 }
 
-.gallery_box img{
-
+.bg_frame img{
+    display: block;
+    margin-bottom: 2rem;
+    width: 35rem;
 }
