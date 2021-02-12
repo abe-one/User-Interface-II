@@ -31,6 +31,9 @@ h2{
 h3{
     font-size:2.5rem;
 }
+h4{
+    font-size: 2rem;
+}
 section{
     padding: 4% 0;
 }
@@ -76,6 +79,9 @@ nav{
     width: 15rem;
     height: 6.5rem;
     border: rgb(49, 43, 43) solid .5rem;
+}
+
+nav .link_blocks{
     border-left: 0px;
 }
 
@@ -91,19 +97,63 @@ body{
     width: 100%;
 }
 
+/* hero box styling */
+
 .hero{
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
-    margin: 3rem 6.5rem;
+    justify-content: space-between;
+    margin: 3rem 6.5rem 6rem 6.5rem;
     padding: 0;
 
 }
 
 .hero_img{
     width: 48%;
+    height: auto;
+    /* overflow: hidden; */
+    /* object-fit: fill */
+
 }
 
-hero_text{
-    
+.hero_img img{
+    display: block;
+    /* border: yellow 10px solid; */
+}
+
+.hero_text{
+    width: 48%;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+   align-items: flex-start;
+   padding-left: 8rem;
+
+}
+
+.hero_name, .hero_text .link_blocks, .hero_passage{
+    margin-bottom: 2rem;
+}
+
+.hero_passage h4{
+    text-align: left;
+}
+
+/* Gallery Styling */
+
+.gallery{
+    margin: 6.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery_box{
+    display: fle;
+
+}
+
+.gallery_box img{
+
 }
