@@ -50,7 +50,7 @@ i{
     margin: 0;
     max-width:100%;
   /*put a border around everything to see where it stops and starts*/
-    border:1px solid orangered;
+    /* border:1px solid orangered; */
 }
 
 /* Header styling */
@@ -141,7 +141,7 @@ body{
     margin-bottom: 2rem;
 }
 
-.hero_passage h3{
+.hero_passage{
     text-align: left;
     /* font-size: 2; */
 }
@@ -213,7 +213,7 @@ footer{
 /* tablet <=800px */
 
 @media(max-width: 800px){
-    
+
     .title{
         margin: 0;
         width: 100%;
@@ -230,5 +230,61 @@ footer{
         width: 60%;
         border: rgb(49, 43, 43) solid .5rem;
 
+    }
+
+    .hero{
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .hero_img{
+        width: auto;
+    }
+
+    .hero_text{
+        width: auto;
+        align-items: center;
+        padding: 0;
+        
+    }
+
+    .hero_passage{
+        text-align: center;
+    }
+
+    .gallery{
+        flex-direction: column;
+        align-content: center;
+        margin: 1.5rem;
+    }
+
+    .gallery_box{
+        max-width: 100%;
+    }
+
+    .social{
+        margin-right: 2rem;
+    }
+}
+
+/* phone <=500px */
+
+@media(max-width: 500px){
+
+    .gallery{
+        margin: 0;
+    }
+
+    .gallery_box{
+        margin: 1rem 0;
+    }
+
+    .bg_frame img{
+        margin: 0;
+    }
+
+    .cto a{
+        padding: 2rem;
     }
 }
