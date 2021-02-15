@@ -50,7 +50,7 @@ i{
     margin: 0;
     max-width:100%;
   /*put a border around everything to see where it stops and starts*/
-    /* border:1px solid orangered; */
+    border:1px solid orangered;
 }
 
 /* Header styling */
@@ -175,6 +175,7 @@ body{
     display: block;
     margin-bottom: 2rem;
     width: 35rem;
+    height: auto;
 }
 
 footer{
@@ -216,6 +217,7 @@ footer{
 
     .title{
         margin: 0;
+        padding: 2.5%;
         width: 100%;
     }
     
@@ -234,8 +236,7 @@ footer{
 
     .hero{
         flex-direction: column;
-        margin-left: 0;
-        margin-right: 0;
+        margin: 2.5% 5%;
     }
 
     .hero_img{
@@ -251,26 +252,49 @@ footer{
 
     .hero_passage h3{
         text-align: center;
+        font-size: 1.5rem;
     }
 
     .gallery{
-        flex-direction: column;
         align-content: center;
         margin: 1.5rem;
+        justify-content: space-evenly;
     }
 
     .gallery_box{
-        max-width: 100%;
+        max-width: 42%;
+    }
+
+    footer{
+        height: 25vh;
+    }
+
+    .cto{
+        margin: 0;
     }
 
     .social{
         margin-right: 2rem;
     }
+
+    .cto{
+        /* margin-top: 5%; */
+    }
+
+    .cto a{
+        margin: 2rem;
+        padding: 2rem;
+    }
+
 }
 
 /* phone <=500px */
 
 @media(max-width: 500px){
+
+    h1{
+        font-size: 3.5rem;
+    }
 
     .gallery{
         margin: 0;
@@ -280,11 +304,24 @@ footer{
         margin: 1rem 0;
     }
 
+    .gallery_box h4{
+        font-size: .8rem;
+    }
+
     .bg_frame img{
         margin: 0;
     }
 
-    .cto a{
-        padding: 2rem;
+    h3{
+        font-size: 1.8rem;
     }
+
+    .cto a{
+        font-size: 1.6rem;
+        margin: 1rem;
+        height: auto;
+        padding: 1rem 2rem;
+    }
+
+
 }
