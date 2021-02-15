@@ -50,7 +50,7 @@ i{
     margin: 0;
     max-width:100%;
   /*put a border around everything to see where it stops and starts*/
-    border:1px solid orangered;
+    /* border:1px solid orangered; */
 }
 
 /* Header styling */
