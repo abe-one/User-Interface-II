@@ -1,1 +1,327 @@
-/* Add CSS styling here */
+/*CSS Reset*/
+
+/*General Styles*/
+html{
+    font-size:62.5%;
+    padding: 0;
+}
+body{
+    font-size:1.8rem;
+    line-height: 1.5;
+    font-family: 'PT Sans', sans-serif;
+    background-color:#FFFAFA;
+}
+h1, h2, h3, h4{
+    letter-spacing: 3px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size:2.5rem;
+}
+h4{
+    font-size: 2rem;
+}
+section{
+    padding: 4% 0;
+}
+a{
+    text-decoration:none;
+    letter-spacing:3px;
+    color:#4F4F4F;
+    font-family: 'PT Sans', sans-serif;
+}
+a:hover{
+    color:#fcb131;
+}
+i{
+    font-size: 5rem;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width:100%;
+  /*put a border around everything to see where it stops and starts*/
+    /* border:1px solid orangered; */
+}
+
+/* Header styling */
+
+header{
+    min-height: 26.5rem;
+    background-color: rgb(169, 212, 169);
+}
+
+.title{
+    width: fit-content;
+    margin: 5rem auto 3rem 8rem;
+
+}
+
+nav{
+    width: fit-content;
+    height: fit-content;
+    margin-left: 12rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.link_blocks{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    width: 15rem;
+    height: 6.5rem;
+    border: rgb(49, 43, 43) solid .5rem;
+}
+
+nav .link_blocks{
+    border-left: 0px;
+}
+
+.link_blocks:first-child{
+    border-left: rgb(49, 43, 43) solid .5rem;
+    background-color: rgb(49, 43, 43);
+    color: whitesmoke;
+} 
+
+/* body styling */
+
+body{
+    width: 100%;
+}
+
+/* hero box styling */
+
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 3rem 6.5rem 6rem 6.5rem;
+    padding: 0;
+
+}
+
+.hero_img{
+    width: 48%;
+    height: auto;
+    /* overflow: hidden; */
+    /* object-fit: fill */
+
+}
+
+.hero_img img{
+    display: block;
+    /* border: yellow 10px solid; */
+}
+
+.hero_text{
+    width: 48%;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 8rem;
+
+}
+
+.hero_name, .hero_text .link_blocks, .hero_passage{
+    margin-bottom: 2rem;
+}
+
+.hero_passage h3{
+    text-align: left;
+    /* font-size: 2; */
+}
+
+/* Gallery Styling */
+
+.gallery{
+    margin: 6.5rem 6.5rem 1.5rem 6.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    height: 100%;
+}
+
+.gallery_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1% 6rem 1%;
+    max-width: 20%;
+    
+    /* height: 35rem; */
+    /* width: 35rem; */
+
+
+}
+
+.bg_frame img{
+    display: block;
+    margin-bottom: 2rem;
+    width: 35rem;
+    height: auto;
+}
+
+footer{
+    height: 40rem;
+    background-color: rgb(169, 212, 169);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin-top: 3rem;
+}
+
+.cto a{
+    margin: 5rem auto;
+    font-size: 3rem;
+    width:fit-content;
+    padding: 5rem 8rem;
+    background-color: whitesmoke;
+}
+
+.social{
+    margin-right: 6.5rem;
+    align-self: flex-end;
+}
+
+/* media queries */
+
+/* tablet <=800px */
+
+@media(max-width: 800px){
+
+    .title{
+        margin: 0;
+        padding: 2.5%;
+        width: 100%;
+    }
+    
+    .intra_site{
+        margin: 0;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav .link_blocks{
+        margin: 0 20%;
+        width: 60%;
+        border: rgb(49, 43, 43) solid .5rem;
+
+    }
+
+    .hero{
+        flex-direction: column;
+        margin: 2.5% 5%;
+    }
+
+    .hero_img{
+        width: auto;
+    }
+
+    .hero_text{
+        width: auto;
+        align-items: center;
+        padding: 0;
+        
+    }
+
+    .hero_passage h3{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .gallery{
+        align-content: center;
+        margin: 1.5rem;
+        justify-content: space-evenly;
+    }
+
+    .gallery_box{
+        max-width: 42%;
+    }
+
+    footer{
+        height: 25vh;
+    }
+
+    .cto{
+        margin: 0;
+    }
+
+    .social{
+        margin-right: 2rem;
+    }
+
+    .cto{
+        /* margin-top: 5%; */
+    }
+
+    .cto a{
+        margin: 2rem;
+        padding: 2rem;
+    }
+
+}
+
+/* phone <=500px */
+
+@media(max-width: 500px){
+
+    h1{
+        font-size: 3.5rem;
+    }
+
+    .gallery{
+        margin: 0;
+    }
+
+    .gallery_box{
+        margin: 1rem 0;
+    }
+
+    .gallery_box h4{
+        font-size: .8rem;
+    }
+
+    .bg_frame img{
+        margin: 0;
+    }
+
+    h3{
+        font-size: 1.8rem;
+    }
+
+    .cto a{
+        font-size: 1.6rem;
+        margin: 1rem;
+        height: auto;
+        padding: 1rem 2rem;
+    }
+
+
+}
